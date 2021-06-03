@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 import axios from "axios";
+import SearchResults from "./SearchResults";
 import "./SearchEngine.css";
 
 export default function SearchEngine() {
   let [keyword, setKeyword] = useState(null);
+  let [searchResults, setSearchResults] = useState(null);
 
   function handleResponse(response) {
-    console.log(response.data[0]);
+    setSearchResults(response.data[0]);
   }
 
   function search(event) {
     event.preventDefault();
-    alert(`Searching for ${keyword}...`);
 
     // API documentation: https://dictionaryapi.dev/
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_GB/${keyword}`;
@@ -27,6 +28,7 @@ export default function SearchEngine() {
       <form onSubmit={search}>
         <input type="search" onChange={handleKeywordChange} />
       </form>
+      <SearchResults searchResults={searchResults} />
     </div>
   );
 }
