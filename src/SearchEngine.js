@@ -25,9 +25,11 @@ export default function SearchEngine() {
 
   return (
     <div className="Search">
-      <form onSubmit={search}>
-        <input type="search" onChange={handleKeywordChange} />
-      </form>
+      <section className="SearchForm">
+        <form onSubmit={search}>
+          <input type="search" onChange={handleKeywordChange} />
+        </form>
+      </section>
       <SearchResults searchResults={searchResults} />
     </div>
   );
