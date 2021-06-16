@@ -5,10 +5,12 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <header className="App-header">
-          <h1 className="text-center">Define It</h1>
-          <h2 className="text-center">What would you like to search for?</h2>
-        </header>
+        <div class="row">
+          <header className="App-header">
+            <h1 className="text-center">define it</h1>
+            <h2 className="text-center">What would you like to search for?</h2>
+          </header>
+        </div>
         <main>
           <SearchEngine />
         </main>
