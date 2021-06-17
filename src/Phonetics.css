@@ -1,0 +1,18 @@
+.Phonetics {
+  padding-top: 5px;
+}
+
+.btn {
+  border-radius: 50%;
+  line-height: 1;
+  padding: 5px;
+  font-size: 12px;
+  background-color: #e5e5e5;
+}
+
+.PhoneticText {
+  margin-left: 5px;
+  color: #e5e5e5;
+  position: relative;
+  top: 2px;
+}

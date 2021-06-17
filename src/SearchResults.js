@@ -8,15 +8,17 @@ export default function SearchResults(props) {
     return (
       <div className="SearchResults">
         <div className="row">
-          <div className="col">
-            <h3>{props.searchResults.word}</h3>
-            {props.searchResults.phonetics.map(function (phonetic, index) {
-              return (
-                <div key={index}>
-                  <Phonetics phonetic={phonetic} />
-                </div>
-              );
-            })}
+          <div className="col-5">
+            <div class="sticky-top">
+              <h3>{props.searchResults.word}</h3>
+              {props.searchResults.phonetics.map(function (phonetic, index) {
+                return (
+                  <div key={index}>
+                    <Phonetics phonetic={phonetic} />
+                  </div>
+                );
+              })}
+            </div>
           </div>
           <div className="col-7 Meanings">
             {props.searchResults.meanings.map(function (meaning, index) {
