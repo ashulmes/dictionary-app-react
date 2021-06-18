@@ -1,13 +1,18 @@
 .Meaning {
-  padding-bottom: 35px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   padding-left: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .Example {
-  color: #737373;
+  color: #a6a6a6;
   font-style: italic;
+  font-size: 14px;
 }
 
 .PartOfSpeech {
   font-size: 26px;
+  font-weight: 600;
+  padding-bottom: 5px;
 }
