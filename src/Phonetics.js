@@ -5,15 +5,15 @@ export default function Phonetics(props) {
   return (
     <div className="Phonetics">
       <h4>
-        <button
+        <a
+          href={props.phonetic.audio}
           type="button"
           className="btn btn-light"
-          href={props.phonetic.audio}
           target="_blank"
           rel="noreferrer"
         >
           ▶
-        </button>{" "}
+        </a>{" "}
         <span className="PhoneticText">{props.phonetic.text}</span>
       </h4>
     </div>
