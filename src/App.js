@@ -1,5 +1,6 @@
 import "./App.css";
 import SearchEngine from "./SearchEngine";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
         <main>
           <SearchEngine />
         </main>
+        <footer>
+          <Footer />
+        </footer>
       </div>
     </div>
   );

@@ -1,0 +1,16 @@
+.Footer {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 80px;
+  color: #a6a6a6;
+}
+
+a {
+  color: #e5e5e5;
+  text-decoration: none;
+  transition: ease-in-out 200ms;
+}
+
+a:hover {
+  color: #fff;
+}
