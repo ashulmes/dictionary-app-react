@@ -1,0 +1,11 @@
+img {
+  padding-top: 30px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: ease-in-out 200ms;
+}
+
+img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}

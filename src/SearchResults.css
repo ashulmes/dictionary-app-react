@@ -9,3 +9,12 @@
 .sticky-top {
   padding-top: 20px;
 }
+
+.Images {
+  position: relative;
+  bottom: 250px;
+}
+
+.img-fluid {
+  border-radius: 4px;
+}

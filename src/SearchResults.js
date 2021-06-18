@@ -2,19 +2,27 @@ import React from "react";
 import Meaning from "./Meaning";
 import Phonetics from "./Phonetics";
 import "./SearchResults.css";
+import Images from "./Images";
 
 export default function SearchResults(props) {
-  if (props.searchResults) {
+  if (props.searchResults && props.images) {
     return (
       <div className="SearchResults">
         <div className="row">
           <div className="col-5">
-            <div class="sticky-top">
+            <div className="sticky-top">
               <h3>{props.searchResults.word}</h3>
               {props.searchResults.phonetics.map(function (phonetic, index) {
                 return (
                   <div key={index}>
                     <Phonetics phonetic={phonetic} />
+                  </div>
+                );
+              })}
+              {props.images.map(function (image, index) {
+                return (
+                  <div key={index}>
+                    <Images image={image} />
                   </div>
                 );
               })}
