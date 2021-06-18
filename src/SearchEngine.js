@@ -23,6 +23,7 @@ export default function SearchEngine() {
     let apiDictionaryUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_GB/${keyword}`;
     axios.get(apiDictionaryUrl).then(handleDictionaryResponse);
 
+    // API documentation: https://www.pexels.com/api/documentation/
     let apiPexelsUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=3`;
     let apiPexelsKey =
       "563492ad6f91700001000001cf5efbcbc3fd41759e13f101d6b2cb52";
