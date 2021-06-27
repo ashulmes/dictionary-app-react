@@ -36,7 +36,7 @@ export default function SearchEngine() {
   }
 
   return (
-    <div className="Search">
+    <div className="Search" data-testid="search-component">
       <section className="SearchForm">
         <div className="row">
           <form onSubmit={search}>
